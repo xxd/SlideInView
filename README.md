@@ -11,6 +11,11 @@ SlidingViewManager *svm = [[SlidingViewManager alloc] initWithInnerView:notifica
 [svm slideViewIn];
 ```
 
+Fork added init method for UITableView
+```
+SlidingViewManager *svm = [[SlidingViewManager alloc] initWithInnerView:notificationView containerView:self.tableView contentOffset:[self.tableView contentOffset].y];
+```
+
 The different approach taken here is to animate any view, without making assumption about whether it is a Warning or Failure message like many other libraries do.
 
 Included are simple demos, most of which emulate the style you'd see in ALAlertBanner.

@@ -43,6 +43,7 @@ static NSTimeInterval kNotificationViewDefaultHideTimeInterval = 4.5;
     //    NSLog(@"innerHeight:%f",innerHeight);
     //    NSLog(@"contentOffset:%f",contentOffset);
     //    NSLog(@"innerTargetY:%f",innerTargetY);
+    
     CGRect original = CGRectMake(innerX, innerOriginalY, innerWidth, innerHeight);
     CGRect target = CGRectMake(innerX, innerTargetY, innerWidth, innerHeight);
     NSLog(@"original:%@",NSStringFromCGRect(original));
