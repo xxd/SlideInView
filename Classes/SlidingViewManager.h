@@ -11,7 +11,8 @@
 
 @interface SlidingViewManager : NSObject
 
-- (id)initWithInnerView:(UIView*)_innerView containerView:(UIView *)_containerView;
+//- (id)initWithInnerView:(UIView*)_innerView containerView:(UIView *)_containerView;
+- (id)initWithInnerView:(UIView*)_innerView containerView:(UIView *)_containerView contentOffset:(CGFloat)_contentOffset;
 - (void)slideViewIn;
 - (void)slideViewOut;
 
